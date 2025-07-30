@@ -1,6 +1,6 @@
 ---
 title: "Actividad 111"
-author: "Miguel"
+author: "Miguel Angel"
 date: "2025-07-30"
 output:
   html_document:
@@ -12,9 +12,9 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 library(readr)
 data <- read.csv("Telefon_a_M_vil_abonados_por_categor_a_20250730.csv")
+
 ```
-
-
+summary(Data)
 
 # *FICHA TÉCNICA*
 
@@ -56,12 +56,6 @@ Cada reporte corresponde a un operador móvil, con sus respectivos datos de lín
 | Líneas retiradas   | Numérico     | Escala de razón       |
 
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(data[2.2])
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
