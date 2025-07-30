@@ -1,0 +1,67 @@
+---
+title: "Actividad 111"
+author: "Miguel"
+date: "2025-07-30"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+data <- read.csv("Telefon_a_M_vil_abonados_por_categor_a_20250730.csv")
+```
+
+
+
+# *FICHA TÉCNICA*
+
+## Concepto
+
+Información de abonados en servicio de Telefonía Móvil por modalidad de suscripción (Prepago o Pospago), Líneas activadas y retiradas del servicio. Los datos están discriminados por proveedor de servicios móviles. Periodo comprendido entre el cuarto trimestre de 2015 y el primero de 2019.
+
+
+
+## Población
+
+Empresas que prestan el servicio de telefonía móvil en Colombia y reportan información al ente regulador.
+
+## Tamaño de la muestra
+
+Todas las empresas operadoras activas dentro del territorio nacional que cumplen con la obligación de reporte estadístico en el periodo definido.
+
+## Instrumento de recolección
+
+Formulario de reporte institucional estandarizado por el organismo regulador de comunicaciones, diligenciado de forma periódica por los operadores móviles.
+
+## Ubicación espacio-temporal
+
+Cobertura geográfica nacional (Colombia), con observaciones trimestrales desde 2015-4T hasta 2019-1T.
+
+## Unidad estadística
+
+Cada reporte corresponde a un operador móvil, con sus respectivos datos de líneas activas y retiradas, segmentadas por modalidad de suscripción.
+
+## Variables
+
+| Nombre             | Tipo de dato | Tipo de escala        |
+|--------------------|--------------|-----------------------|
+| Año                | Numérico     | Escala ordinal        |
+| Trimestre          | Numérico     | Escala ordinal        |
+| Proveedor          | Categórico   | Escala nominal        |
+| Modalidad          | Categórico   | Escala nominal        |
+| Líneas activadas   | Numérico     | Escala de razón       |
+| Líneas retiradas   | Numérico     | Escala de razón       |
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(data[2.2])
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
